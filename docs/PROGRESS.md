@@ -1,15 +1,16 @@
 # SubWatch Progress
 
 ## Current step
-Step 2: Billing and cost logic, tests first
+Step 3: Room data layer per cahier section 8.3
 
 ## Pending pull request
-Step 2: Billing and cost logic, tests first (branch `step-2-billing-cost-logic`)
+None.
 
 ## Done
 | Step | Commit hash | Date |
 |---|---|---|
 | Step 1: Theme and navigation skeleton | `43f529d` | 2026-11-01 |
+| Step 2: Billing and cost logic, tests first | `38208a4` | 2026-11-01 |
 
 ## Decisions made during the build
 - Pre-approved decisions D1 to D8 recorded in PLAN.md.
