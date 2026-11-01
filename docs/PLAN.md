@@ -18,7 +18,7 @@
 
 ## Steps (each one is one pull request)
 
-- [ ] **Step 1: Theme and navigation skeleton**: theme tokens, serif font for headlines only (res/font if present, else fontFamily serif), portrait only, edge-to-edge, one Activity with Navigation, 3 bottom tabs, Fiche/Formulaire/Paramètres destinations, large top app bar with gear icon, back arrows, Formulaire without bottom bar.
+- [x] **Step 1: Theme and navigation skeleton**: theme tokens, serif font for headlines only (res/font if present, else fontFamily serif), portrait only, edge-to-edge, one Activity with Navigation, 3 bottom tabs, Fiche/Formulaire/Paramètres destinations, large top app bar with gear icon, back arrows, Formulaire without bottom bar.
 - [ ] **Step 2: Billing and cost logic, tests first**: read docs/billing-cases.md. Write the JUnit tests for sections 1 to 3 (D01 to D25, S1, S2, C01 to C11, T-A to T-D) and see them fail, then implement BillingCalculator (due dates, Clock) and CostCalculator (costs and totals per currency) in domain/, pure Java.
 - [ ] **Step 3: Room data layer per cahier section 8.3**: entities, converters, DAO, database with exportSchema and 7 pre-filled categories, Repository with a single-thread executor, instrumented DAO tests.
 - [ ] **Step 4: Notification spike on branch spike/notifications (never merged)**: channel, POST_NOTIFICATIONS, a temporary button on Paramètres firing a notification in 1 minute through WorkManager. In your review message give me 5 phone tests (app open, swiped away, rebooted, permission denied, battery saver) and wait for my results before closing the step.

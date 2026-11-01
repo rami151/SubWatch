@@ -1,14 +1,15 @@
 # SubWatch Progress
 
 ## Current step
-Step 1: Theme and navigation skeleton
+Step 2: Billing and cost logic, tests first
 
 ## Pending pull request
-Step 1: Theme and navigation skeleton (branch `step-1-theme-nav`)
+None.
 
 ## Done
 | Step | Commit hash | Date |
 |---|---|---|
+| Step 1: Theme and navigation skeleton | `43f529d` | 2026-11-01 |
 
 ## Decisions made during the build
 - Pre-approved decisions D1 to D8 recorded in PLAN.md.
