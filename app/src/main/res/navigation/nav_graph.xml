@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <!-- Main tabs -->
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.subwatch.ui.DashboardFragment"
+        android:label="@string/tab_dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboard_to_fiche"
+            app:destination="@id/ficheFragment" />
+        <action
+            android:id="@+id/action_dashboard_to_settings"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/subscriptionsFragment"
+        android:name="com.example.subwatch.ui.SubscriptionsFragment"
+        android:label="@string/tab_subscriptions"
+        tools:layout="@layout/fragment_subscriptions">
+        <action
+            android:id="@+id/action_subscriptions_to_fiche"
+            app:destination="@id/ficheFragment" />
+        <action
+            android:id="@+id/action_subscriptions_to_formulaire"
+            app:destination="@id/formulaireFragment" />
+        <action
+            android:id="@+id/action_subscriptions_to_settings"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/statsFragment"
+        android:name="com.example.subwatch.ui.StatsFragment"
+        android:label="@string/tab_stats"
+        tools:layout="@layout/fragment_stats">
+        <action
+            android:id="@+id/action_stats_to_settings"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <!-- Extra destinations -->
+    <fragment
+        android:id="@+id/ficheFragment"
+        android:name="com.example.subwatch.ui.FicheFragment"
+        android:label="@string/title_fiche"
+        tools:layout="@layout/fragment_fiche" />
+
+    <fragment
+        android:id="@+id/formulaireFragment"
+        android:name="com.example.subwatch.ui.FormulaireFragment"
+        android:label="@string/title_formulaire"
+        tools:layout="@layout/fragment_formulaire" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.subwatch.ui.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>

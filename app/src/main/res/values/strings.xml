@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">SubWatch</string>
+
+    <!-- Bottom navigation tabs -->
+    <string name="tab_dashboard">Tableau de bord</string>
+    <string name="tab_subscriptions">Abonnements</string>
+    <string name="tab_stats">Statistiques</string>
+
+    <!-- Extra destinations -->
+    <string name="title_fiche">Fiche</string>
+    <string name="title_formulaire">Formulaire</string>
+    <string name="title_settings">Paramètres</string>
+
+    <!-- Content descriptions -->
+    <string name="cd_settings">Paramètres</string>
+    <string name="cd_back">Retour</string>
+    <string name="cd_close">Fermer</string>
 </resources>
