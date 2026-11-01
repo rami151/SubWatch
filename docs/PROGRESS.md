@@ -4,7 +4,7 @@
 Step 3: Room data layer per cahier section 8.3
 
 ## Pending pull request
-None.
+Step 3: Room data layer per cahier section 8.3 (branch `step-3-room-data-layer`)
 
 ## Done
 | Step | Commit hash | Date |
