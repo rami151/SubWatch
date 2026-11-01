@@ -4,7 +4,7 @@
 Step 2: Billing and cost logic, tests first
 
 ## Pending pull request
-None.
+Step 2: Billing and cost logic, tests first (branch `step-2-billing-cost-logic`)
 
 ## Done
 | Step | Commit hash | Date |
