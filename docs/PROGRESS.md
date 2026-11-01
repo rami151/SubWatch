@@ -1,10 +1,10 @@
 # SubWatch Progress
 
 ## Current step
-None (Part A setup in progress).
+Step 1: Theme and navigation skeleton
 
 ## Pending pull request
-None.
+Step 1: Theme and navigation skeleton (branch `step-1-theme-nav`)
 
 ## Done
 | Step | Commit hash | Date |
@@ -20,7 +20,7 @@ None.
 - **Section 8.4 self-rescheduling reminders**: Reminders use a self-rescheduling OneTimeWorkRequest (unique name, REPLACE), not a PeriodicWorkRequest.
 
 ## Manual checks pending
-None.
+- Verify Step 1 UI on device / emulator: 3 bottom navigation tabs, large CollapsingToolbar with gear icon on main tabs, back arrow on Fiche and Settings, close (X) on Formulaire, bottom bar hidden on Formulaire and Settings.
 
 ## Open questions
-- `docs/cahier-des-charges.md` currently has 0 bytes. Check if content needs to be provided or restored.
+None.

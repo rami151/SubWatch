@@ -1,9 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
     <style name="Base.Theme.SubWatch" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Light colors -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorOnBackground">@color/onSurface</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/onSurface</item>
+        <item name="colorSurfaceVariant">@color/surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/onSurfaceVariant</item>
+        <item name="colorError">@color/error</item>
+        <item name="colorWarning">@color/warning</item>
+        <!-- Headline text appearance using serif font -->
+        <item name="textAppearanceHeadlineMedium">@style/HeadlineMediumSerif</item>
+        <item name="textAppearanceHeadlineLarge">@style/HeadlineLargeSerif</item>
+
+        <!-- Status bar / nav bar -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
 
     <style name="Theme.SubWatch" parent="Base.Theme.SubWatch" />
+
+    <style name="HeadlineMediumSerif" parent="@style/TextAppearance.Material3.HeadlineMedium">
+        <item name="fontFamily">@font/serif_font_family</item>
+    </style>
+
+    <style name="HeadlineLargeSerif" parent="@style/TextAppearance.Material3.HeadlineLarge">
+        <item name="fontFamily">@font/serif_font_family</item>
+    </style>
+
+    <!-- Large Top App Bar style with custom background and serif expanded title -->
+    <style name="Widget.SubWatch.CollapsingToolbar" parent="Widget.Material3.CollapsingToolbar.Large">
+        <item name="expandedTitleTextAppearance">@style/ExpandedTitleSerif</item>
+        <item name="collapsedTitleTextAppearance">@style/CollapsedTitleSerif</item>
+        <item name="contentScrim">?android:colorBackground</item>
+        <item name="statusBarScrim">?android:colorBackground</item>
+    </style>
+
+    <style name="ExpandedTitleSerif" parent="@style/TextAppearance.Material3.HeadlineLarge">
+        <item name="fontFamily">@font/serif_font_family</item>
+    </style>
+
+    <style name="CollapsedTitleSerif" parent="@style/TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/serif_font_family</item>
+    </style>
+
+    <!-- Toolbar style: transparent background, onSurface icons -->
+    <style name="Widget.SubWatch.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- Bottom navigation: text-only style with pill indicator -->
+    <style name="Widget.SubWatch.BottomNav" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">?android:colorBackground</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="itemActiveIndicatorStyle">@style/Widget.SubWatch.BottomNav.Indicator</item>
+        <item name="itemTextAppearanceActive">@style/TextAppearance.SubWatch.BottomNav.Active</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.SubWatch.BottomNav.Inactive</item>
+        <item name="itemIconTint">@android:color/transparent</item>
+        <item name="itemIconSize">0dp</item>
+    </style>
+
+    <style name="Widget.SubWatch.BottomNav.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/secondaryContainer</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Material3.Corner.Full</item>
+    </style>
+
+    <style name="TextAppearance.SubWatch.BottomNav.Active" parent="@style/TextAppearance.Material3.LabelMedium">
+        <item name="android:textColor">@color/onSurface</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.SubWatch.BottomNav.Inactive" parent="@style/TextAppearance.Material3.LabelMedium">
+        <item name="android:textColor">@color/onSurfaceVariant</item>
+        <item name="android:textSize">14sp</item>
+    </style>
 </resources>

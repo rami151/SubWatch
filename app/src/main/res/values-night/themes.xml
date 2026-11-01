@@ -1,7 +1,20 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Night theme inherits all styles from Base.Theme.SubWatch;
+         only the color resource files differ (values-night/colors.xml). -->
     <style name="Base.Theme.SubWatch" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorOnBackground">@color/onSurface</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/onSurface</item>
+        <item name="colorSurfaceVariant">@color/surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/onSurfaceVariant</item>
+        <item name="colorError">@color/error</item>
+        <item name="colorWarning">@color/warning</item>
+        <item name="textAppearanceHeadlineMedium">@style/HeadlineMediumSerif</item>
+        <item name="textAppearanceHeadlineLarge">@style/HeadlineLargeSerif</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
 </resources>
