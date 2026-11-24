@@ -50,13 +50,26 @@
         android:id="@+id/ficheFragment"
         android:name="com.example.subwatch.ui.FicheFragment"
         android:label="@string/title_fiche"
-        tools:layout="@layout/fragment_fiche" />
+        tools:layout="@layout/fragment_fiche">
+        <argument
+            android:name="subscriptionId"
+            android:defaultValue="-1L"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_fiche_to_formulaire"
+            app:destination="@id/formulaireFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/formulaireFragment"
         android:name="com.example.subwatch.ui.FormulaireFragment"
         android:label="@string/title_formulaire"
-        tools:layout="@layout/fragment_formulaire" />
+        tools:layout="@layout/fragment_formulaire">
+        <argument
+            android:name="subscriptionId"
+            android:defaultValue="-1L"
+            app:argType="long" />
+    </fragment>
 
     <fragment
         android:id="@+id/settingsFragment"
