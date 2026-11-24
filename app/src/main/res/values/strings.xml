@@ -8,11 +8,85 @@
 
     <!-- Extra destinations -->
     <string name="title_fiche">Fiche</string>
-    <string name="title_formulaire">Formulaire</string>
+    <string name="title_formulaire">Nouvel abonnement</string>
+    <string name="title_formulaire_edit">Modifier l\'abonnement</string>
     <string name="title_settings">Paramètres</string>
 
     <!-- Content descriptions -->
     <string name="cd_settings">Paramètres</string>
     <string name="cd_back">Retour</string>
     <string name="cd_close">Fermer</string>
+    <string name="cd_select_date">Sélectionner une date</string>
+    <string name="cd_sort">Trier la liste</string>
+    <string name="cd_add">Ajouter un abonnement</string>
+
+    <!-- Formulaire -->
+    <string name="form_name_hint">Nom</string>
+    <string name="form_name_placeholder">Nom de l\'abonnement</string>
+    <string name="form_name_error_required">Champ requis. Saisissez le nom de l\'abonnement.</string>
+    <string name="form_name_error_length">50 caractères maximum.</string>
+    <string name="form_amount_hint">Montant</string>
+    <string name="form_amount_error">Le montant doit être supérieur à 0.</string>
+    <string name="form_currency_hint">Devise</string>
+    <string name="form_cycle_hint">Cycle</string>
+    <string name="form_start_date_hint">Date de début</string>
+    <string name="form_start_date_error">Saisissez une date de début.</string>
+    <string name="form_category_hint">Catégorie</string>
+    <string name="category_uncategorized">Non classé</string>
+    <string name="form_trial_label">Période d\'essai</string>
+    <string name="form_trial_end_date_hint">Date de fin d\'essai</string>
+    <string name="form_trial_end_date_error_required">Saisissez la date de fin d\'essai.</string>
+    <string name="form_trial_end_date_error_order">La date de fin d\'essai doit suivre la date de début.</string>
+    <string name="form_notes_hint">Notes</string>
+    <string name="form_notes_placeholder">Facultatif</string>
+    <string name="form_notes_error_length">200 caractères maximum.</string>
+    <string name="btn_save">Enregistrer</string>
+
+    <!-- Billing Cycles -->
+    <string name="cycle_weekly">Hebdomadaire</string>
+    <string name="cycle_monthly">Mensuel</string>
+    <string name="cycle_quarterly">Trimestriel</string>
+    <string name="cycle_yearly">Annuel</string>
+
+    <!-- Abonnements list -->
+    <string name="active_count_singular">%d abonnement actif</string>
+    <string name="active_count_plural">%d abonnements actifs</string>
+    <string name="sort_by_due_date">Trié par échéance</string>
+    <string name="sort_by_name">Trié par nom</string>
+    <string name="sort_by_cost">Trié par montant</string>
+    <string name="sort_menu_due_date">Prochaine échéance</string>
+    <string name="sort_menu_name">Nom</string>
+    <string name="sort_menu_cost">Montant</string>
+    <string name="btn_add">Ajouter</string>
+    <string name="badge_trial">Essai</string>
+    <string name="after_trial">Après l\'essai</string>
+
+    <!-- Empty state -->
+    <string name="empty_subscriptions_title">Aucun abonnement\nenregistré.</string>
+    <string name="empty_subscriptions_subtitle">Ajoutez votre premier abonnement pour\nsuivre vos échéances.</string>
+    <string name="empty_subscriptions_button">Ajouter un abonnement</string>
+
+    <!-- Relative dates -->
+    <string name="due_today">Aujourd\'hui</string>
+    <string name="due_tomorrow">Demain</string>
+    <string name="due_in_days">Dans %d jours</string>
+    <string name="trial_end_today">Fin de l\'essai aujourd\'hui</string>
+    <string name="trial_end_tomorrow">Fin de l\'essai demain</string>
+    <string name="trial_end_in_days">Fin de l\'essai dans %d jours</string>
+
+    <!-- Fiche -->
+    <string name="fiche_due_date_label">Prochaine échéance</string>
+    <string name="fiche_start_date_label">Date de début</string>
+    <string name="fiche_category_label">Catégorie</string>
+    <string name="fiche_notes_label">Notes</string>
+    <string name="fiche_no_notes">Aucune note</string>
+    <string name="btn_edit">Modifier</string>
+    <string name="btn_archive">Archiver</string>
+    <string name="btn_delete">Supprimer</string>
+
+    <!-- Delete dialog -->
+    <string name="dialog_delete_title">Supprimer l\'abonnement</string>
+    <string name="dialog_delete_message">Voulez-vous vraiment supprimer cet abonnement ? Cette action est irréversible.</string>
+    <string name="dialog_cancel">Annuler</string>
+    <string name="dialog_confirm_delete">Supprimer</string>
 </resources>
