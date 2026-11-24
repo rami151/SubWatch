@@ -13,6 +13,7 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.example.subwatch.data.repository.SubscriptionRepository;
 import com.example.subwatch.databinding.ActivityMainBinding;
 
 import java.util.Set;
@@ -35,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        // Recalculate passed due dates on application launch (RG6, D5)
+        SubscriptionRepository.getInstance(getApplication()).recalculateOverdueSubscriptions(null);
 
         // Edge-to-edge insets
         ViewCompat.setOnApplyWindowInsetsListener(binding.main, (v, insets) -> {
